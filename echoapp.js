@@ -167,6 +167,9 @@ function SetPinSession(intent, session, callback) {
     //Check if user has specified the Pin status to HIGH or LOW
     if (Pin) {
         var PinStatus = Pin.value;
+        //small workaround since sometimes one arrives as one and not 1
+        if(Pin.value == 'one' || Pin.value=='1' || Pin.value==1)
+            PinStatus = 1;
         console.log(PinStatus);
         //set the status {0,1} of the Pin through the Particle Cloud
         var data = 'args='+PinStatus;
