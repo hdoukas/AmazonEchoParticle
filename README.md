@@ -1,6 +1,6 @@
 # AmazonEchoParticle
 
-This is an example of using [Amazon Echo] (Alexa) as an interface for IoT devices. It communicates with the [Particle] (ex Spark core) Cloud API and allows you to ask the temperature reading and control a digital pin.
+This is an example of using [Amazon Echo]  (Alexa) as an interface for IoT devices. It communicates with the [Particle]  (ex Spark core) Cloud API and allows you to ask the temperature reading and control a digital pin.
 
 The code for the Particle is in **particle.c** while for the Echo app an Amazon Lambda function is used (**echoapp.js**) in Node.js
 
